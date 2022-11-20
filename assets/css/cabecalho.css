@@ -1,0 +1,93 @@
+.cabecalho{
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+    padding: 0 6rem;
+    background: var(--fundo-card);
+    height: 52px;
+}
+.menu__busca{
+    width: 370px;
+    display: flex;
+    align-items: center;
+    position: relative;
+}
+.menu__logo{
+    cursor: pointer;
+    background-image: url('../img/logo linkedin.png');
+    background-repeat: no-repeat;
+    background-position: center;
+    width: 34px;
+    height: 34px;
+    margin-right: 8px;
+}
+.menu__busca-icone{
+    width: 24px;
+    height: 24px;
+    background-image: url('../img/icone-busca.svg');
+    background-size: contain;
+    position: absolute;
+    left: 50px;
+}
+.menu__input{
+    width: 280px;
+    height: 34px;
+    background: var(--input);
+    border: none;
+    border-radius: .3rem;
+    padding-left: 2.4rem;
+}
+.menu__input::placeholder{
+    color: var(--texto-secundario);
+}
+.menu__lista{
+    display: flex;
+}
+.menu__item{
+  height: 52px;
+  display: flex;
+  flex-direction: column;
+  gap: 0.25em;
+  align-items: center;
+  justify-content: center;
+}
+.menu__item:last-child{
+  margin-left: .2rem;
+  border-left: 1px solid var(--texto-secundario);
+}
+.menu__item a{
+  text-align: center;
+  width: 80px;
+  font-size: 12px;
+  color: var(--texto-secundario);
+  transition: color .3s ease;
+  text-decoration: none;
+}
+.menu__item a:hover{
+  color: var(--texto-principal);
+}
+.item-icone{
+  background-repeat: no-repeat;
+  background-position: center;
+  width: 24px;
+  height: 24px;
+}
+
+span.inicio{
+  background-image: url('../img/inicio.png');
+}
+span.minha-rede{
+  background-image: url('../img/rede.png');
+}
+span.vagas{
+  background-image: url('../img/vagas.png');
+}
+span.mensagens{
+  background-image: url('../img/mensagem.png');
+}
+span.notificacoes{
+  background-image: url('../img/notificacoes.png');
+}
+span.solucoes{
+  background-image: url('../img/solucoes.png');
+}
